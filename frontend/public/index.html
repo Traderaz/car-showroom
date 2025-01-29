@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APEX MOTORS | Luxury & Performance</title>
-    <link rel="stylesheet" href="../src/styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Apex Performance</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 </head>
 <body>
-    <!-- Navbar with F1 car icon -->
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-brand">
             <i class="fas fa-car-side fa-2x"></i>
@@ -23,88 +23,42 @@
         </div>
     </nav>
 
-    <!-- Hero Section - Updated CTA -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <div class="brand-tag">Welcome to Apex Performance</div>
+            <span class="brand-tag">Welcome to Apex Performance</span>
             <h1 class="hero-title">
-                <span class="line-1">Drive</span>
-                <span class="line-2">Your</span>
-                <span class="line-3">Ambition</span>
+                <span class="line-1">Experience</span>
+                <span class="line-2">Automotive</span>
+                <span class="line-3">Excellence</span>
             </h1>
-            <p class="hero-subtitle">Specializing in Performance Cars & Hot Hatches</p>
+            <p class="hero-subtitle">Discover our exclusive collection of high-performance vehicles</p>
+            
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Cars in Stock</span>
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Premium Vehicles</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Certified</span>
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years Experience</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">Support</span>
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Happy Clients</span>
                 </div>
             </div>
+            
             <div class="hero-cta">
                 <a href="#collection" class="cta-button">View Collection</a>
             </div>
-            <div class="scroll-indicator">
-                <span class="scroll-text">Scroll to Explore</span>
-                <div class="scroll-arrow"></div>
-            </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="about-container">
-            <!-- Main heading with animated underline -->
-            <div class="section-title">
-                <h2>Welcome to Apex</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <!-- Elegant subtitle -->
-            <div class="section-subtitle">
-                <span>Curators of Automotive Excellence</span>
-            </div>
-
-            <!-- Mission statement -->
-            <div class="mission-statement">
-                <p>At Apex Motors, we don't just sell cars – we curate experiences. Each vehicle in our collection represents the pinnacle of automotive engineering, carefully selected for those who demand nothing but excellence.</p>
-            </div>
-
-            <!-- Feature boxes -->
-            <div class="feature-boxes">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-crown"></i>
-                    </div>
-                    <h3>Unrivaled Selection</h3>
-                    <p>Access to the world's most exclusive and sought-after vehicles</p>
-                </div>
-
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-concierge-bell"></i>
-                    </div>
-                    <h3>Bespoke Service</h3>
-                    <p>Personalized attention from our dedicated luxury automotive specialists</p>
-                </div>
-
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Heritage Assured</h3>
-                    <p>Complete history and authentication for every vehicle</p>
-                </div>
-            </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
@@ -116,76 +70,94 @@
             <p>Curated selection of driver-focused vehicles</p>
         </div>
         
-        <!-- Brand Filter Buttons with placeholders -->
         <div class="collection-filters">
             <button class="filter-btn active" data-filter="all">All Models</button>
-            <button class="filter-btn" data-filter="bmw">
-                <i class="fab fa-bmw"></i> BMW
-            </button>
-            <button class="filter-btn placeholder" data-filter="mercedes" disabled>
-                <i class="fab fa-mercedes-benz"></i> Mercedes
-                <span class="coming-soon">Coming Soon</span>
-            </button>
-            <button class="filter-btn placeholder" data-filter="audi" disabled>
-                <i class="fab fa-audi"></i> Audi
-                <span class="coming-soon">Coming Soon</span>
-            </button>
-            <button class="filter-btn placeholder" data-filter="volkswagen" disabled>
-                <i class="fab fa-vw"></i> Volkswagen
-                <span class="coming-soon">Coming Soon</span>
-            </button>
+            <button class="filter-btn" data-filter="bmw">BMW</button>
+            <button class="filter-btn" data-filter="mercedes">Mercedes (Coming Soon)</button>
+            <button class="filter-btn" data-filter="audi">Audi (Coming Soon)</button>
+            <button class="filter-btn" data-filter="porsche">Porsche (Coming Soon)</button>
+            <button class="filter-btn" data-filter="lamborghini">Lamborghini (Coming Soon)</button>
         </div>
-        
+
         <div class="model-grid">
             <div class="model-image" data-category="bmw">
-                <img src="images/car1.jpg" alt="BMW M135i">
+                <a href="images/car1.jpg" data-fancybox="gallery">
+                    <img src="images/car1.jpg" alt="BMW Performance Car">
+                </a>
             </div>
             <div class="model-image" data-category="bmw">
-                <img src="images/car2.jpg" alt="BMW M135i">
+                <a href="images/car2.jpg" data-fancybox="gallery">
+                    <img src="images/car2.jpg" alt="BMW Performance Car">
+                </a>
             </div>
             <div class="model-image" data-category="bmw">
-                <img src="images/car3.jpg" alt="BMW M135i">
+                <a href="images/car3.jpg" data-fancybox="gallery">
+                    <img src="images/car3.jpg" alt="BMW Performance Car">
+                </a>
             </div>
             <div class="model-image" data-category="bmw">
-                <img src="images/car4.jpg" alt="BMW M135i">
+                <a href="images/car4.jpg" data-fancybox="gallery">
+                    <img src="images/car4.jpg" alt="BMW Performance Car">
+                </a>
             </div>
             <div class="model-image" data-category="bmw">
-                <img src="images/car5.jpg" alt="BMW M135i">
+                <a href="images/car5.jpg" data-fancybox="gallery">
+                    <img src="images/car5.jpg" alt="BMW Performance Car">
+                </a>
             </div>
+        </div>
+
+        <!-- Modal for expanded images -->
+        <div class="modal">
+            <span class="modal-close">&times;</span>
+            <img class="modal-content" id="expandedImage">
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <div class="experience-content">
-            <span class="section-tag">The Apex Experience</span>
-            <h2>Beyond Ordinary</h2>
-            <div class="experience-grid">
-                <div class="experience-item">
-                    <span class="number">01</span>
-                    <h3>Private Consultation</h3>
-                    <p>Begin your journey with a personalized session in our luxury suite</p>
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2>Driven by Excellence</h2>
+                <p>Setting new standards in luxury automotive experiences</p>
+            </div>
+
+            <div class="core-values">
+                <div class="value-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Premium Service</h3>
+                    <p>Delivering exceptional customer service with personalized attention to every detail of your experience.</p>
                 </div>
-                <div class="experience-item">
-                    <span class="number">02</span>
-                    <h3>Curated Selection</h3>
-                    <p>Discover vehicles matched to your exact preferences</p>
+
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Trust & Integrity</h3>
+                    <p>Building lasting relationships through transparency, honesty, and professional expertise.</p>
                 </div>
-                <div class="experience-item">
-                    <span class="number">03</span>
-                    <h3>Dynamic Experience</h3>
-                    <p>Test drive your selection in optimal conditions</p>
+
+                <div class="value-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Quality Assurance</h3>
+                    <p>Every vehicle meets our rigorous standards of excellence and performance.</p>
                 </div>
-                <div class="experience-item">
-                    <span class="number">04</span>
-                    <h3>Bespoke Delivery</h3>
-                    <p>Receive your vehicle in a manner that exceeds expectations</p>
+
+                <div class="value-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Dedicated Support</h3>
+                    <p>Available whenever you need us, ensuring your complete satisfaction at every step.</p>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Trusted Partner in Performance Vehicles</h3>
+                    <p>At Apex Performance, we understand that purchasing a luxury vehicle is more than just a transaction – it's the beginning of an extraordinary journey. Our commitment to excellence extends beyond our exceptional vehicle collection to the heart of our business: our relationship with you.</p>
+                    <p>With years of expertise in the luxury automotive industry, we pride ourselves on offering a curated selection of the finest vehicles, coupled with unparalleled customer service that continues long after your purchase.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Previous car-showcase section remains but moves here -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -247,94 +219,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-main">
-                <div class="footer-brand">
-                    <i class="fas fa-car-side"></i>
-                    <h3>APEX MOTORS</h3>
-                    <p>Redefining Automotive Excellence</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-section">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#collection">Collection</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#">Private Viewings</a></li>
-                            <li><a href="#">Test Drives</a></li>
-                            <li><a href="#">Vehicle Sourcing</a></li>
-                            <li><a href="#">After Sales</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Connect</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Apex Motors. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <span class="close-btn">&times;</span>
-        <img id="lightbox-img" src="" alt="Expanded view">
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
-        // Simplified version to debug
-        function openLightbox(img) {
-            console.log('Image clicked!'); // Debug log
-            
-            // Create and append lightbox immediately
-            const lightbox = document.createElement('div');
-            lightbox.className = 'lightbox';
-            lightbox.style.display = 'block'; // Force display
-            
-            const image = document.createElement('img');
-            image.src = img.src;
-            
-            lightbox.appendChild(image);
-            document.body.appendChild(lightbox);
-            
-            // Simple click to close
-            lightbox.addEventListener('click', function() {
-                this.remove();
-            });
-        }
-
-        // Add click listeners to all images
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('.model-image img');
-            images.forEach(img => {
-                img.addEventListener('click', function() {
-                    openLightbox(this);
-                });
-            });
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
         });
     </script>
 </body>
