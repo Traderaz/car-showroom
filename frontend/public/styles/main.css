@@ -711,6 +711,24 @@ body {
         font-size: 0.9rem;
         line-height: 1.4;
     }
+
+    /* Update brand tag and mobile styles */
+    .brand-tag,
+    .section-tag {  /* Also hiding section tags on mobile */
+        display: none !important; /* Force hide with !important */
+    }
+
+    .hero-content {
+        padding-top: 0; /* Remove extra padding */
+    }
+
+    .hero-title {
+        margin-top: 0; /* Remove extra margin */
+    }
+
+    .section-header {
+        margin-top: 2rem; /* Adjust section header spacing */
+    }
 }
 
 /* Extra small devices */
@@ -741,6 +759,11 @@ body {
 
     .value-card:active {
         transform: scale(0.98);
+    }
+
+    /* Ensure no brand tag shows on touch devices */
+    .brand-tag {
+        display: none !important;
     }
 }
 
