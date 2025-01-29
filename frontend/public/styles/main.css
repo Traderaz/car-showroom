@@ -595,7 +595,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
+/* Enhanced mobile optimization */
 @media (max-width: 768px) {
     /* Navbar optimization */
     .navbar {
@@ -619,7 +619,7 @@ body {
 
     .hero-content {
         padding: 0 1rem;
-        margin-top: -2rem; /* Pull content up slightly */
+        margin-top: -2rem;
     }
 
     .hero-title {
@@ -711,23 +711,25 @@ body {
         font-size: 0.9rem;
         line-height: 1.4;
     }
+}
 
-    /* Update brand tag and mobile styles */
+/* Hide brand tag on mobile */
+@media (max-width: 768px) {
     .brand-tag,
-    .section-tag {  /* Also hiding section tags on mobile */
-        display: none !important; /* Force hide with !important */
+    .section-tag {
+        display: none !important;
     }
 
     .hero-content {
-        padding-top: 0; /* Remove extra padding */
+        padding-top: 0;
     }
 
     .hero-title {
-        margin-top: 0; /* Remove extra margin */
+        margin-top: 0;
     }
 
     .section-header {
-        margin-top: 2rem; /* Adjust section header spacing */
+        margin-top: 2rem;
     }
 }
 
@@ -760,11 +762,6 @@ body {
     .value-card:active {
         transform: scale(0.98);
     }
-
-    /* Ensure no brand tag shows on touch devices */
-    .brand-tag {
-        display: none !important;
-    }
 }
 
 /* Smoother scrolling */
@@ -777,86 +774,75 @@ html {
     overflow-x: hidden;
 }
 
-/* Add these mobile menu styles */
-.mobile-menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-    z-index: 1001;
+/* About Section Styles */
+.about-section {
+    padding: 6rem 5%;
+    background: var(--gradient);
 }
 
-.mobile-menu-toggle span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    transition: all 0.3s ease;
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.mobile-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background: rgba(26, 26, 26, 0.98);
+.core-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.value-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
     backdrop-filter: blur(10px);
-    padding: 80px 2rem 2rem;
-    transition: right 0.3s ease;
-    z-index: 1000;
+    -webkit-backdrop-filter: blur(10px);
 }
 
-.mobile-menu a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 1rem 0;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.value-card:hover {
+    transform: translateY(-10px);
 }
 
-.mobile-menu.active {
-    right: 0;
+.value-card i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
 }
 
-.mobile-menu-toggle.active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+.value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
 }
 
-.mobile-menu-toggle.active span:nth-child(2) {
-    opacity: 0;
+.value-card p {
+    color: var(--text-light);
+    opacity: 0.8;
+    line-height: 1.6;
 }
 
-.mobile-menu-toggle.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+.about-content {
+    margin-top: 4rem;
+    text-align: center;
 }
 
-@media (max-width: 768px) {
-    .desktop-menu {
-        display: none;
-    }
-
-    .mobile-menu-toggle {
-        display: flex;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .navbar {
-        justify-content: space-between;
-        padding: 1rem;
-    }
-
-    .nav-brand {
-        font-size: 1.1rem;
-    }
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.about-text p {
+    color: var(--text-light);
+    opacity: 0.9;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
 }

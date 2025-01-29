@@ -68,23 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    const menuToggle = document.querySelector('.mobile-menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const body = document.body;
-
-    menuToggle.addEventListener('click', function() {
-        this.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-        body.classList.toggle('menu-open');
-    });
-
-    // Close menu when clicking a link
-    const mobileLinks = document.querySelectorAll('.mobile-menu a');
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            menuToggle.classList.remove('active');
-            mobileMenu.classList.remove('active');
-            body.classList.remove('menu-open');
-        });
+    // Image expansion functionality
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
     });
 });
