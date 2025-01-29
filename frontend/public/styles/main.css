@@ -60,8 +60,6 @@ body {
     background: transparent;
     z-index: 1000;
     transition: background 0.3s ease;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar.scrolled {
@@ -253,25 +251,31 @@ body {
     box-shadow: 0 5px 20px rgba(230, 57, 70, 0.4);
 }
 
+/* Update scroll indicator styles */
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
-    animation: bounce 2s infinite;
-    opacity: 0;
-    animation: fadeIn 0.5s ease forwards 2s, bounce 2s infinite 2s;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    padding: 10px;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-light);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
+/* Hide scroll indicator on mobile */
+@media (max-width: 768px) {
+    .scroll-indicator {
+        display: none; /* Completely hide on mobile */
+    }
+}
+
+/* Hide on touch devices specifically */
+@media (hover: none) {
+    .scroll-indicator {
+        display: none;
     }
 }
 
@@ -595,20 +599,33 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
-        padding: 1rem;
+        background: rgba(26, 26, 26, 0.95);
+        padding: 0.8rem 1rem;
     }
 
     .nav-brand {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .nav-links {
         display: none;
     }
 
+    .hero {
+        padding-top: 60px;
+    }
+
+    .hero-content {
+        padding-top: 2rem;
+    }
+
+    .brand-tag {
+        margin-top: 2rem;
+    }
+
     .hero-title {
-        font-size: 2.5rem;
-        padding: 0 1rem;
+        font-size: 2.2rem;
+        margin-top: 1rem;
     }
 
     .hero-subtitle {
@@ -778,8 +795,16 @@ body {
 
 /* Small phones */
 @media (max-width: 380px) {
+    .navbar {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .nav-brand {
+        font-size: 1rem;
+    }
+
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .brand-tag {
