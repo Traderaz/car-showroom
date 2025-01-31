@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/static/js/main.a483758f.js",
+    "static/media/bmw1.jpg": "/static/media/bmw1.d62f1bb57e45c8fa1a42.jpg",
+    "static/media/bmw2.jpg": "/static/media/bmw2.25060ec6bc8a5086e73b.jpg",
+    "static/media/bmw4.jpg": "/static/media/bmw4.0c5fb8de3abe27585ba3.jpg",
+    "static/media/bmw3.jpg": "/static/media/bmw3.3cf2d1c3fd28765a0ef0.jpg",
+    "index.html": "/index.html",
+    "main.a483758f.js.map": "/static/js/main.a483758f.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a483758f.js"
+  ]
+}
